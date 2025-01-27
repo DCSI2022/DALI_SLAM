@@ -17,6 +17,8 @@ This work is currently under review. The code will be open-sourced and refined a
 
 [<u>WHU-Helmet Dataset</u>](https://github.com/kafeiyin00/WHU-HelmetDataset): A helmet-based multi-sensor SLAM dataset for the evaluation of real-time 3D mapping in large-scale GNSS-denied environments
 
+<strong>Calibration</strong>
+
 [<u>AFLI-Calib</u>](https://github.com/DCSI2022/AFLI_Calib): Robust LiDAR-IMU extrinsic self-calibration based on adaptive frame length LiDAR odometry 
 
 ## 🔗 Competition

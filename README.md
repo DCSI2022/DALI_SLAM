@@ -1,11 +1,11 @@
 # DALI-SLAM: Degeneracy-Aware LiDAR-inertial SLAM with novel distortion correction and accurate multi-constraint pose graph optimization
 
-This work is currently under review. The code will be open-sourced and refined after acceptance.
+The code will be open-sourced and refined after acceptance.
 
 > **DALI-SLAM: Degeneracy-Aware LiDAR-inertial SLAM with novel distortion correction and accurate multi-constraint pose graph optimization**<br/>
-> [Weitong Wu](https://github.com/wwtinwhu), [Chi Chen](https://3s.whu.edu.cn/info/1025/1364.htm), [Bisheng Yang](https://3s.whu.edu.cn/info/1025/1415.htm), [Xianghong Zou](https://zouxianghong.github.io/), [Fuxun Liang](https://liangfxwhu.github.io/), [Yuhang Xu](https://3s.whu.edu.cn/info/1028/1964.htm), Xiufeng He<br/>
-> Under Review<br/>
-> [**Paper**]()
+> [Weitong Wu](https://github.com/wwtinwhu), [Chi Chen](https://3s.whu.edu.cn/info/1025/1364.htm), [Bisheng Yang](https://3s.whu.edu.cn/info/1025/1415.htm), [Xianghong Zou](https://zouxianghong.github.io/), [Fuxun Liang](https://liangfxwhu.github.io/), [Yuhang Xu](https://3s.whu.edu.cn/info/1028/1964.htm), [Xiufeng He](https://dxy.hhu.edu.cn/2017/0412/c6458a93886/page.htm)<br/>
+ISPRS Journal of Photogrammetry and Remote Sensing, 2025, 221: 92-108<br/>
+> [**Paper**](https://www.sciencedirect.com/science/article/pii/S0924271625000413)
 
 ## 🔭 Introduction
 
@@ -24,6 +24,22 @@ This work is currently under review. The code will be open-sourced and refined a
 ## 🔗 Competition
 DALI-SLAM has been served as a system (partially modified) to participate
  in [ICCV 2023 SLAM Challenge](https://superodometry.com/iccv23_challenge_LiI), achieving 3rd place on the LiDAR inertial track, 1st place in RPE metric, and 2nd place in ATE metric.
+
+## 💡 Citation
+If you find this repo helpful, please give us a star .
+Please consider citing DALI-SLAM if this program benefits your project
+```
+@article{wu2025dali,
+  title={DALI-SLAM: Degeneracy-aware LiDAR-inertial SLAM with novel distortion correction and accurate multi-constraint pose graph optimization},
+  author={Wu, Weitong and Chen, Chi and Yang, Bisheng and Zou, Xianghong and Liang, Fuxun and Xu, Yuhang and He, Xiufeng},
+  journal={ISPRS Journal of Photogrammetry and Remote Sensing},
+  volume={221},
+  pages={92--108},
+  year={2025},
+  publisher={Elsevier}
+}
+```
+
 ## 🔗 Acknowledgments
 We sincerely thank the excellent projects:
 - [FAST-LIO2](https://github.com/hku-mars/FAST_LIO)

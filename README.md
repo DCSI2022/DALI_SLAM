@@ -3,7 +3,7 @@
 The code will be open-sourced and refined after acceptance.
 
 > **DALI-SLAM: Degeneracy-Aware LiDAR-inertial SLAM with novel distortion correction and accurate multi-constraint pose graph optimization**<br/>
-> [Weitong Wu](https://github.com/wwtinwhu), [Chi Chen](https://3s.whu.edu.cn/info/1025/1364.htm), [Bisheng Yang](https://3s.whu.edu.cn/info/1025/1415.htm), [Xianghong Zou](https://zouxianghong.github.io/), [Fuxun Liang](https://liangfxwhu.github.io/), [Yuhang Xu](https://3s.whu.edu.cn/info/1028/1964.htm), [Xiufeng He](https://dxy.hhu.edu.cn/2017/0412/c6458a93886/page.htm)<br/>
+> [Weitong Wu](https://www.researchgate.net/profile/Weitong-Wu?ev=hdr_xprf), [Chi Chen](https://3s.whu.edu.cn/info/1025/1364.htm), [Bisheng Yang](https://3s.whu.edu.cn/info/1025/1415.htm), [Xianghong Zou](https://zouxianghong.github.io/), [Fuxun Liang](https://liangfxwhu.github.io/), [Yuhang Xu](https://www.researchgate.net/profile/Yuhang-Xu-12), [Xiufeng He](https://dxy.hhu.edu.cn/2017/0412/c6458a93886/page.htm)<br/>
 ISPRS Journal of Photogrammetry and Remote Sensing, 2025, 221: 92-108<br/>
 > [**Paper**](https://www.sciencedirect.com/science/article/pii/S0924271625000413)
 

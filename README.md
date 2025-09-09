@@ -1,9 +1,7 @@
 # DALI-SLAM: Degeneracy-Aware LiDAR-inertial SLAM with novel distortion correction and accurate multi-constraint pose graph optimization
 
-The code will be open-sourced and refined after acceptance.
-
 > **DALI-SLAM: Degeneracy-Aware LiDAR-inertial SLAM with novel distortion correction and accurate multi-constraint pose graph optimization**<br/>
-> [Weitong Wu](https://www.researchgate.net/profile/Weitong-Wu?ev=hdr_xprf), [Chi Chen](https://3s.whu.edu.cn/info/1025/1364.htm), [Bisheng Yang](https://3s.whu.edu.cn/info/1025/1415.htm), [Xianghong Zou](https://zouxianghong.github.io/), [Fuxun Liang](https://liangfxwhu.github.io/), [Yuhang Xu](https://www.researchgate.net/profile/Yuhang-Xu-12), [Xiufeng He](https://dxy.hhu.edu.cn/2017/0412/c6458a93886/page.htm)<br/>
+> [Weitong Wu](https://www.researchgate.net/profile/Weitong-Wu?ev=hdr_xprf), [Chi Chen](https://3s.whu.edu.cn/info/1025/1364.htm), [Bisheng Yang](https://3s.whu.edu.cn/info/1025/1415.htm), [Xianghong Zou](https://zouxianghong.github.io/), [Fuxun Liang](https://sud.whu.edu.cn/info/1761/45151.htm), [Yuhang Xu](https://www.researchgate.net/profile/Yuhang-Xu-12), [Xiufeng He](https://dxy.hhu.edu.cn/2017/0412/c6458a93886/page.htm)<br/>
 ISPRS Journal of Photogrammetry and Remote Sensing, 2025, 221: 92-108<br/>
 > [**Paper**](https://www.sciencedirect.com/science/article/pii/S0924271625000413)
 
@@ -20,6 +18,43 @@ ISPRS Journal of Photogrammetry and Remote Sensing, 2025, 221: 92-108<br/>
 <strong>Calibration</strong>
 
 [<u>AFLI-Calib</u>](https://github.com/DCSI2022/AFLI_Calib): Robust LiDAR-IMU extrinsic self-calibration based on adaptive frame length LiDAR odometry 
+
+## ✏️ Build & Run
+### 1. How to build this project
+
+```bash
+cd ~/catkin_ws/src
+git clone https://github.com/DCSI2022/DALI_SLAM.git
+cd DALI_SLAM
+catkin_make
+```
+Need solve the dependency before catkin_make, or use Docker
+
+#### Docker (Recommended)
+```
+# in local
+docker build -t $image_name:tag . #build custom name and tag from Dockerfile
+docker run -it -v ~/catkin_ws/src/DALI-SLAM:/home/catkin_ws/src/DALI-SLAM -v /Data_path://home/data --network host --gpus all -u root $image_name:tag
+# in container 
+cd /home/catkin_ws 
+catkin_make 
+source devel/setup.bash
+```
+
+### 2. RUN DA-LIO
+
+  we provide [test data](https://drive.google.com/file/d/1nMMQN5lh8Ju6TMY8BJs6zHaCaZb4aFCX/view?usp=drive_link), you can download it and test it with the command below!
+
+In local
+  ```
+  roscore
+  rviz -d ~/catkin_ws/src/DALI-SLAM/DA_LIO/rviz_cfg/loam_livox.rviz
+  rosbag play test_mid70_zhuoer.bag
+  ```
+In container
+  ```
+  roslaunch da_lio run_dalio.launch
+  ```
 
 ## 🔗 Competition
 DALI-SLAM has been served as a system (partially modified) to participate

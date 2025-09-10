@@ -34,7 +34,7 @@ Need solve the dependency before catkin_make, or use Docker
 ```
 # in local
 docker build -t $image_name:tag . #build custom name and tag from Dockerfile
-docker run -it -v ~/catkin_ws/src/DALI-SLAM:/home/catkin_ws/src/DALI-SLAM -v /Data_path://home/data --network host --gpus all -u root $image_name:tag
+docker run -it -v ~/catkin_ws/src/DALI-SLAM:/home/catkin_ws/src/DALI-SLAM -v $Data_folder_path:/home/data --network host --gpus all -u root $image_name:tag
 # in container 
 cd /home/catkin_ws 
 catkin_make 
@@ -42,8 +42,9 @@ source devel/setup.bash
 ```
 
 ### 2. RUN DA-LIO
+Paramter description is provided in [Parameter_Descrip](./Parameter_Descrip.md). Check it!
 
-  we provide [test data](https://drive.google.com/file/d/1nMMQN5lh8Ju6TMY8BJs6zHaCaZb4aFCX/view?usp=drive_link), you can download it and test it with the command below!
+  we provide [test data](https://drive.google.com/drive/folders/1FzTZTCts9eMgpeBFJrRbPPFdHyZQMR43?usp=drive_link), you can download it and test it with the command below!
 
 In local
   ```
@@ -55,6 +56,17 @@ In container
   ```
   roslaunch da_lio run_dalio.launch
   ```
+
+### 3. RUN MC-PGO
+In container
+```
+cd /home/catkin_ws
+
+./devel/lib/backend_mapping/mc_pgo /home/data/test_data.bag src/dalislam/DA_LIO/Log/trajxxx.txt $path_to_extrinsic $lidar_type $lidar_topic $rosbag_start $rosbag_end $submap_length $overlap_threshold $IfSimulation
+```
+
+## Todo
+- [ ] Refactor MC-PGO in online mode
 
 ## 🔗 Competition
 DALI-SLAM has been served as a system (partially modified) to participate
